@@ -1,11 +1,6 @@
-// Base URL for currency API (you can use it later to fetch rates)
-// ❌ FIX: you used a static "eur.json" file, which locks base currency to EUR
-// ✅ FIXED: use the general endpoint (no /eur.json) so we can fetch any base dynamically
 const Base_URL = "https://2024-03-06.currency-api.pages.dev/v1/currencies";
-
 let fromCurr = document.querySelector(".from select");
 let toCurr = document.querySelector(".to select");
-// List of currencies with their country codes (for flags)
 const countryList = {
     "USD": "US",
     "PKR": "PK",
@@ -83,7 +78,6 @@ const btn = document.querySelector("form button");
 const dropdownSelects = document.querySelectorAll(".dropdown select");
 
 
-// Loop through both dropdowns
 for (let select of dropdownSelects) {
     for (let currencyCode in countryList) {
         let newOption = document.createElement("option");
@@ -122,5 +116,6 @@ window.addEventListener("load", () => {
   defaultCountry();
 updateExchangeRate();
 });
+
 
  
