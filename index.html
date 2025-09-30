@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <h2>Currency Converter</h2>
+        <form>
+            <div class="amount">
+                <p>Enter Amount</p>
+                <input value="1" type="text"/>
+            </div>
+            <div class="dropdown">
+                <div class="from">
+                    <p>From</p>
+                    <div class="select">
+                        <img src="https://flagsapi.com/US/flat/64.png" alt="flag">
+                        <select name="from">
+                            <option value="USD">USD – United States Dollar</option> 
+                            <option value="PKR">PKR – Pakistani Rupee</option>
+                            <option value="EUR">EUR – Euro</option>
+                            <option value="GBP">GBP – British Pound Sterling</option>
+                            <option value="JPY">JPY – Japanese Yen</option>
+                            <option value="AUD">AUD – Australian Dollar</option>
+                            <option value="CAD">CAD – Canadian Dollar</option>
+                            <option value="CHF">CHF – Swiss Franc</option>
+                            <option value="CNY">CNY – Chinese Yuan Renminbi</option>
+                            <option value="INR">INR – Indian Rupee</option>
+                            <option value="SAR">SAR – Saudi Riyal</option>
+                            <option value="AED">AED – United Arab Emirates Dirham</option>
+                            <option value="TRY">TRY – Turkish Lira</option>
+                            <option value="RUB">RUB – Russian Ruble</option>
+                            <option value="ZAR">ZAR – South African Rand</option>
+                            <option value="NZD">NZD – New Zealand Dollar</option>
+                            <option value="HKD">HKD – Hong Kong Dollar</option>
+                            <option value="SGD">SGD – Singapore Dollar</option>
+                            <option value="SEK">SEK – Swedish Krona</option>
+                            <option value="NOK">NOK – Norwegian Krone</option>
+                            <option value="DKK">DKK – Danish Krone</option>
+                            <option value="MXN">MXN – Mexican Peso</option>
+                            <option value="BRL">BRL – Brazilian Real</option>
+                            <option value="KRW">KRW – South Korean Won</option>
+                            <option value="EGP">EGP – Egyptian Pound</option>
+                            <option value="THB">THB – Thai Baht</option>
+                            <option value="MYR">MYR – Malaysian Ringgit</option>
+                            <option value="IDR">IDR – Indonesian Rupiah</option>
+                            <option value="VND">VND – Vietnamese Dong</option>
+                            <option value="BDT">BDT – Bangladeshi Taka</option>
+                        </select>
+                    </div>
+                </div>
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                <div class="to">
+                    <p>To</p>
+                    <div class="select">
+                        <img src="https://flagsapi.com/US/flat/64.png" alt="flag">
+                        <select name="to"> 
+                            <option value="USD" selected>USD – United States Dollar</option> 
+                            <option value="PKR">PKR – Pakistani Rupee</option>
+                            <option value="EUR">EUR – Euro</option>
+                            <option value="GBP">GBP – British Pound Sterling</option>
+                            <option value="JPY">JPY – Japanese Yen</option>
+                            <option value="AUD">AUD – Australian Dollar</option>
+                            <option value="CAD">CAD – Canadian Dollar</option>
+                            <option value="CHF">CHF – Swiss Franc</option>
+                            <option value="CNY">CNY – Chinese Yuan Renminbi</option>
+                            <option value="INR">INR – Indian Rupee</option>
+                            <option value="SAR">SAR – Saudi Riyal</option>
+                            <option value="AED">AED – United Arab Emirates Dirham</option>
+                            <option value="TRY">TRY – Turkish Lira</option>
+                            <option value="RUB">RUB – Russian Ruble</option>
+                            <option value="ZAR">ZAR – South African Rand</option>
+                            <option value="NZD">NZD – New Zealand Dollar</option>
+                            <option value="HKD">HKD – Hong Kong Dollar</option>
+                            <option value="SGD">SGD – Singapore Dollar</option>
+                            <option value="SEK">SEK – Swedish Krona</option>
+                            <option value="NOK">NOK – Norwegian Krone</option>
+                            <option value="DKK">DKK – Danish Krone</option>
+                            <option value="MXN">MXN – Mexican Peso</option>
+                            <option value="BRL">BRL – Brazilian Real</option>
+                            <option value="KRW">KRW – South Korean Won</option>
+                            <option value="EGP">EGP – Egyptian Pound</option>
+                            <option value="THB">THB – Thai Baht</option>
+                            <option value="MYR">MYR – Malaysian Ringgit</option>
+                            <option value="IDR">IDR – Indonesian Rupiah</option>
+                            <option value="VND">VND – Vietnamese Dong</option>
+                            <option value="BDT">BDT – Bangladeshi Taka</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+ <input type="text" class="msgBox" readonly>          
+   <button type="submit">Get Exchange Rate</button>
+        </form>
+    </div>   
+</body>
+ <script src="app.js"></script>
+</html>
